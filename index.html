@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolkit para Prestação de Imóvel</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Imóvel</h1>
+    </header>
+    
+    <main>
+        <section id="calculadora">
+            <h2>Calculadora de Financiamento Imobiliário</h2>
+            <form id="formCalculadora">
+                <label for="valorImovel">Valor do Imóvel:</label>
+                <input type="number" id="valorImovel" required>
+                
+                <label for="valorEntrada">Valor da Entrada:</label>
+                <input type="number" id="valorEntrada" required>
+                
+                <label for="taxaJuros">Taxa de Juros Anual (%):</label>
+                <input type="number" step="0.01" id="taxaJuros" required>
+                
+                <label for="prazo">Prazo (anos):</label>
+                <input type="number" id="prazo" required>
+                
+                <label for="tipoFinanciamento">Tipo de Financiamento:</label>
+                <select id="tipoFinanciamento" required>
+                    <option value="SAC">SAC</option>
+                    <option value="Price">Price</option>
+                </select>
+                
+                <button type="submit">Calcular</button>
+            </form>
+            <table id="tabelaPrestacoes">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Prestação</th>
+                        <th>Amortização</th>
+                        <th>Juros</th>
+                        <th>Saldo Devedor</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="informacoes">
+            <h2>Informações e Guias</h2>
+            <div id="checklistDocumentacao">
+                <h3>Checklist para Documentação Necessária</h3>
+                <ul id="checklistPessoaFisica"></ul>
+                <ul id="checklistPessoaJuridica"></ul>
+            </div>
+
+            <div id="planejamentoFinanceiro">
+                <h3>Guia de Planejamento Financeiro</h3>
+                <div id="orcamentoMensal"></div>
+                <ul id="dicasEconomia"></ul>
+            </div>
+
+            <div id="tiposFinanciamento">
+                <h3>Informações sobre Tipos de Financiamento</h3>
+                <div id="sfh"></div>
+                <div id="sfi"></div>
+            </div>
+
+            <div id="processoCompra">
+                <h3>Guias do Processo de Compra</h3>
+                <ul id="passosCompra"></ul>
+                <ul id="dicasVisita"></ul>
+            </div>
+
+            <div id="faqs">
+                <h3>Perguntas Frequentes</h3>
+                <ul id="faqsFinanciamento"></ul>
+                <ul id="faqsImovel"></ul>
+            </div>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos e Contatos</h2>
+            <ul id="recursosOnline"></ul>
+            <ul id="contatosConsultoria"></ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Carlos Eduardo da Silva</p>
+    </footer>
+
+    <script src="toolkitPrestacaoImovel.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
